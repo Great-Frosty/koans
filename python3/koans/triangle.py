@@ -17,9 +17,16 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
-    # DELETE 'PASS' AND WRITE THIS CODE
-    pass
+
+    if min([a,b,c])<=0: raise TriangleError
+    x,y,z = sorted([a,b,c])
+    if x+y <= z: raise TriangleError
+    
+    if a==b==c: return "equilateral"
+    elif (a == b != c) | (b==c!=a) | (c==a!=b): return "isosceles"
+    else: return "scalene"
+        
 
 # Error class used in part 2.  No need to change this code.
 class TriangleError(Exception):
-    pass
+    print("We dead!")
