@@ -25,7 +25,7 @@ class Proxy:
         #initialize '_obj' attribute last. Trust me on this!
         self._obj = target_object
 
-    # WRITE CODE HERE
+    return self._obj
 
 # The proxy object should pass the following Koan:
 #
