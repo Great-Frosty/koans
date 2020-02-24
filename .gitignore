@@ -5,3 +5,4 @@ answers
 .hg
 .idea
 koans_wsp.code-workspace
+python3/.vscode/settings.json
